@@ -1,0 +1,12 @@
+{
+	"name": "AzureSqlDatabaseSmartCity",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=smartcityserver.database.windows.net;initial catalog=smart_city_db;user id=simoncen",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNNQVJUQ0lUWURGXzIwY2FhMGU5LTY1ODgtNDQ3Mi1hYjM2LTQ5YTYzODAwNzBiMSINCn0="
+		}
+	}
+}
