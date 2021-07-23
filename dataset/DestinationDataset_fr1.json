@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_fr1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseSmartCity",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SmartCityBlob"
+		}
+	}
+}
