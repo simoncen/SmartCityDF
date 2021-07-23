@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_6s6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "smartcity_blob"
+		}
+	}
+}

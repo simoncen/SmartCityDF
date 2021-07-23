@@ -1,0 +1,514 @@
+{
+	"name": "CopyPipeline_6s6",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_6s6",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "smartcityadmin//"
+					},
+					{
+						"name": "Destination",
+						"value": "dbo.smartcity_blob"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings",
+							"skipLineCount": 0
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"tableOption": "autoCreate"
+					},
+					"enableStaging": false,
+					"validateDataConsistency": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "unique_key",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "unique_key",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "descriptor",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "descriptor",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "incident_zip",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "incident_zip",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "created_date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "created_date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "city",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "city",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": ":@computed_region_sbqj_enih",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": ":@computed_region_sbqj_enih",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "cross_street_2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cross_street_2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": ":@computed_region_efsh_h5xi",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": ":@computed_region_efsh_h5xi",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "park_facility_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "park_facility_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": ":@computed_region_92fq_4b7q",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": ":@computed_region_92fq_4b7q",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "intersection_street_1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "intersection_street_1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "landmark",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "landmark",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "agency_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "agency_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "latitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "latitude",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "x_coordinate_state_plane",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "x_coordinate_state_plane",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": ":@computed_region_yeji_bk3q",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": ":@computed_region_yeji_bk3q",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "incident_address",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "incident_address",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "location_type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "location_type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "cross_street_1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cross_street_1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "community_board",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "community_board",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "agency",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "agency",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "park_borough",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "park_borough",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "borough",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "borough",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "street_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "street_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "complaint_type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "complaint_type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "longitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "longitude",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": ":@computed_region_f5dn_yrer",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": ":@computed_region_f5dn_yrer",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "status",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "y_coordinate_state_plane",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "y_coordinate_state_plane",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "intersection_street_2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "intersection_street_2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "bridge_highway_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "bridge_highway_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "bridge_highway_segment",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "bridge_highway_segment",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "resolution_action_updated_date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "resolution_action_updated_date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "closed_date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "closed_date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "address_type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "address_type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "bridge_highway_direction",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "bridge_highway_direction",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "taxi_pick_up_location",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "taxi_pick_up_location",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "facility_type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "facility_type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "road_ramp",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "road_ramp",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "due_date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "due_date",
+									"type": "String"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_6s6",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_6s6",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
