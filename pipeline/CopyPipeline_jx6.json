@@ -55,7 +55,8 @@
 								},
 								"sink": {
 									"name": "unique_key",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -66,7 +67,8 @@
 								},
 								"sink": {
 									"name": "descriptor",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -77,7 +79,8 @@
 								},
 								"sink": {
 									"name": "incident_zip",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -88,7 +91,8 @@
 								},
 								"sink": {
 									"name": "created_date",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -99,7 +103,8 @@
 								},
 								"sink": {
 									"name": "city",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -110,7 +115,8 @@
 								},
 								"sink": {
 									"name": ":@computed_region_sbqj_enih",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -121,7 +127,8 @@
 								},
 								"sink": {
 									"name": "cross_street_2",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -132,7 +139,8 @@
 								},
 								"sink": {
 									"name": ":@computed_region_efsh_h5xi",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -143,7 +151,8 @@
 								},
 								"sink": {
 									"name": "park_facility_name",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -154,7 +163,8 @@
 								},
 								"sink": {
 									"name": ":@computed_region_92fq_4b7q",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -165,7 +175,8 @@
 								},
 								"sink": {
 									"name": "intersection_street_1",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -176,7 +187,8 @@
 								},
 								"sink": {
 									"name": "landmark",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -187,7 +199,8 @@
 								},
 								"sink": {
 									"name": "agency_name",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -198,7 +211,8 @@
 								},
 								"sink": {
 									"name": "latitude",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -209,7 +223,8 @@
 								},
 								"sink": {
 									"name": "x_coordinate_state_plane",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -220,7 +235,8 @@
 								},
 								"sink": {
 									"name": ":@computed_region_yeji_bk3q",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -231,7 +247,8 @@
 								},
 								"sink": {
 									"name": "incident_address",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -242,7 +259,8 @@
 								},
 								"sink": {
 									"name": "location_type",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -253,7 +271,8 @@
 								},
 								"sink": {
 									"name": "cross_street_1",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -264,7 +283,8 @@
 								},
 								"sink": {
 									"name": "community_board",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -275,7 +295,8 @@
 								},
 								"sink": {
 									"name": "agency",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -286,7 +307,8 @@
 								},
 								"sink": {
 									"name": "park_borough",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -297,7 +319,8 @@
 								},
 								"sink": {
 									"name": "borough",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -308,7 +331,8 @@
 								},
 								"sink": {
 									"name": "street_name",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -319,7 +343,8 @@
 								},
 								"sink": {
 									"name": "complaint_type",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -330,7 +355,8 @@
 								},
 								"sink": {
 									"name": "longitude",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -341,7 +367,8 @@
 								},
 								"sink": {
 									"name": ":@computed_region_f5dn_yrer",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -352,7 +379,8 @@
 								},
 								"sink": {
 									"name": "status",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -363,7 +391,8 @@
 								},
 								"sink": {
 									"name": "y_coordinate_state_plane",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -374,7 +403,8 @@
 								},
 								"sink": {
 									"name": "intersection_street_2",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -385,7 +415,8 @@
 								},
 								"sink": {
 									"name": "bridge_highway_name",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -396,7 +427,8 @@
 								},
 								"sink": {
 									"name": "bridge_highway_segment",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -407,7 +439,8 @@
 								},
 								"sink": {
 									"name": "resolution_action_updated_date",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -418,7 +451,8 @@
 								},
 								"sink": {
 									"name": "closed_date",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -429,7 +463,8 @@
 								},
 								"sink": {
 									"name": "address_type",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -440,7 +475,8 @@
 								},
 								"sink": {
 									"name": "bridge_highway_direction",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -451,7 +487,8 @@
 								},
 								"sink": {
 									"name": "taxi_pick_up_location",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -462,7 +499,8 @@
 								},
 								"sink": {
 									"name": "facility_type",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -473,7 +511,8 @@
 								},
 								"sink": {
 									"name": "road_ramp",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -484,7 +523,8 @@
 								},
 								"sink": {
 									"name": "due_date",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							}
 						],
