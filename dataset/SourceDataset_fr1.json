@@ -1,0 +1,183 @@
+{
+	"name": "SourceDataset_fr1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "smartcityadmin"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "unique_key",
+				"type": "String"
+			},
+			{
+				"name": "descriptor",
+				"type": "String"
+			},
+			{
+				"name": "incident_zip",
+				"type": "String"
+			},
+			{
+				"name": "created_date",
+				"type": "String"
+			},
+			{
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": ":@computed_region_sbqj_enih",
+				"type": "String"
+			},
+			{
+				"name": "cross_street_2",
+				"type": "String"
+			},
+			{
+				"name": ":@computed_region_efsh_h5xi",
+				"type": "String"
+			},
+			{
+				"name": "park_facility_name",
+				"type": "String"
+			},
+			{
+				"name": ":@computed_region_92fq_4b7q",
+				"type": "String"
+			},
+			{
+				"name": "intersection_street_1",
+				"type": "String"
+			},
+			{
+				"name": "landmark",
+				"type": "String"
+			},
+			{
+				"name": "agency_name",
+				"type": "String"
+			},
+			{
+				"name": "latitude",
+				"type": "String"
+			},
+			{
+				"name": "x_coordinate_state_plane",
+				"type": "String"
+			},
+			{
+				"name": ":@computed_region_yeji_bk3q",
+				"type": "String"
+			},
+			{
+				"name": "incident_address",
+				"type": "String"
+			},
+			{
+				"name": "location_type",
+				"type": "String"
+			},
+			{
+				"name": "cross_street_1",
+				"type": "String"
+			},
+			{
+				"name": "community_board",
+				"type": "String"
+			},
+			{
+				"name": "agency",
+				"type": "String"
+			},
+			{
+				"name": "park_borough",
+				"type": "String"
+			},
+			{
+				"name": "borough",
+				"type": "String"
+			},
+			{
+				"name": "street_name",
+				"type": "String"
+			},
+			{
+				"name": "complaint_type",
+				"type": "String"
+			},
+			{
+				"name": "longitude",
+				"type": "String"
+			},
+			{
+				"name": ":@computed_region_f5dn_yrer",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "y_coordinate_state_plane",
+				"type": "String"
+			},
+			{
+				"name": "intersection_street_2",
+				"type": "String"
+			},
+			{
+				"name": "bridge_highway_name",
+				"type": "String"
+			},
+			{
+				"name": "bridge_highway_segment",
+				"type": "String"
+			},
+			{
+				"name": "resolution_action_updated_date",
+				"type": "String"
+			},
+			{
+				"name": "closed_date",
+				"type": "String"
+			},
+			{
+				"name": "address_type",
+				"type": "String"
+			},
+			{
+				"name": "bridge_highway_direction",
+				"type": "String"
+			},
+			{
+				"name": "taxi_pick_up_location",
+				"type": "String"
+			},
+			{
+				"name": "facility_type",
+				"type": "String"
+			},
+			{
+				"name": "road_ramp",
+				"type": "String"
+			},
+			{
+				"name": "due_date",
+				"type": "String"
+			}
+		]
+	}
+}
