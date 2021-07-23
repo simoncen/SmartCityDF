@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_jx6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseSmartCity",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "smartcity"
+		}
+	}
+}
