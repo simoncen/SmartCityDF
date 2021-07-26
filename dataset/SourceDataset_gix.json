@@ -1,0 +1,135 @@
+{
+	"name": "SourceDataset_gix",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_new",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "smartcityadmin"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "collision_id",
+				"type": "String"
+			},
+			{
+				"name": "crash_date",
+				"type": "String"
+			},
+			{
+				"name": "crash_time",
+				"type": "String"
+			},
+			{
+				"name": "on_street_name",
+				"type": "String"
+			},
+			{
+				"name": "number_of_persons_injured",
+				"type": "String"
+			},
+			{
+				"name": "number_of_persons_killed",
+				"type": "String"
+			},
+			{
+				"name": "number_of_pedestrians_injured",
+				"type": "String"
+			},
+			{
+				"name": "number_of_pedestrians_killed",
+				"type": "String"
+			},
+			{
+				"name": "number_of_cyclist_injured",
+				"type": "String"
+			},
+			{
+				"name": "number_of_cyclist_killed",
+				"type": "String"
+			},
+			{
+				"name": "number_of_motorist_injured",
+				"type": "String"
+			},
+			{
+				"name": "number_of_motorist_killed",
+				"type": "String"
+			},
+			{
+				"name": "contributing_factor_vehicle_1",
+				"type": "String"
+			},
+			{
+				"name": "contributing_factor_vehicle_2",
+				"type": "String"
+			},
+			{
+				"name": "vehicle_type_code1",
+				"type": "String"
+			},
+			{
+				"name": "vehicle_type_code2",
+				"type": "String"
+			},
+			{
+				"name": "borough",
+				"type": "String"
+			},
+			{
+				"name": "zip_code",
+				"type": "String"
+			},
+			{
+				"name": "latitude",
+				"type": "String"
+			},
+			{
+				"name": "longitude",
+				"type": "String"
+			},
+			{
+				"name": "cross_street_name",
+				"type": "String"
+			},
+			{
+				"name": "off_street_name",
+				"type": "String"
+			},
+			{
+				"name": "contributing_factor_vehicle_3",
+				"type": "String"
+			},
+			{
+				"name": "contributing_factor_vehicle_4",
+				"type": "String"
+			},
+			{
+				"name": "vehicle_type_code_3",
+				"type": "String"
+			},
+			{
+				"name": "vehicle_type_code_4",
+				"type": "String"
+			},
+			{
+				"name": "contributing_factor_vehicle_5",
+				"type": "String"
+			},
+			{
+				"name": "vehicle_type_code_5",
+				"type": "String"
+			}
+		]
+	}
+}

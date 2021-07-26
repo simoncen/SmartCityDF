@@ -1,0 +1,382 @@
+{
+	"name": "CopyPipeline_gix",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_gix",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "smartcityadmin//"
+					},
+					{
+						"name": "Destination",
+						"value": "dbo.smartCityMoniterVC"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings",
+							"skipLineCount": 0
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"tableOption": "autoCreate"
+					},
+					"enableStaging": false,
+					"validateDataConsistency": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "collision_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "collision_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "crash_date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "crash_date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "crash_time",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "crash_time",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "on_street_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "on_street_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_persons_injured",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_persons_injured",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_persons_killed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_persons_killed",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_pedestrians_injured",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_pedestrians_injured",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_pedestrians_killed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_pedestrians_killed",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_cyclist_injured",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_cyclist_injured",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_cyclist_killed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_cyclist_killed",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_motorist_injured",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_motorist_injured",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number_of_motorist_killed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "number_of_motorist_killed",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "contributing_factor_vehicle_1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "contributing_factor_vehicle_1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "contributing_factor_vehicle_2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "contributing_factor_vehicle_2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "vehicle_type_code1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "vehicle_type_code1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "vehicle_type_code2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "vehicle_type_code2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "borough",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "borough",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "zip_code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "zip_code",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "latitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "latitude",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "longitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "longitude",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "cross_street_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cross_street_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "off_street_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "off_street_name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "contributing_factor_vehicle_3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "contributing_factor_vehicle_3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "contributing_factor_vehicle_4",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "contributing_factor_vehicle_4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "vehicle_type_code_3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "vehicle_type_code_3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "vehicle_type_code_4",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "vehicle_type_code_4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "contributing_factor_vehicle_5",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "contributing_factor_vehicle_5",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "vehicle_type_code_5",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "vehicle_type_code_5",
+									"type": "String"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_gix",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_gix",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
