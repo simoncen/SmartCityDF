@@ -55,7 +55,8 @@
 								},
 								"sink": {
 									"name": "collision_id",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -66,7 +67,8 @@
 								},
 								"sink": {
 									"name": "crash_date",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -77,7 +79,8 @@
 								},
 								"sink": {
 									"name": "crash_time",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -88,7 +91,8 @@
 								},
 								"sink": {
 									"name": "on_street_name",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -99,7 +103,8 @@
 								},
 								"sink": {
 									"name": "number_of_persons_injured",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -110,7 +115,8 @@
 								},
 								"sink": {
 									"name": "number_of_persons_killed",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -121,7 +127,8 @@
 								},
 								"sink": {
 									"name": "number_of_pedestrians_injured",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -132,7 +139,8 @@
 								},
 								"sink": {
 									"name": "number_of_pedestrians_killed",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -143,7 +151,8 @@
 								},
 								"sink": {
 									"name": "number_of_cyclist_injured",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -154,7 +163,8 @@
 								},
 								"sink": {
 									"name": "number_of_cyclist_killed",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -165,7 +175,8 @@
 								},
 								"sink": {
 									"name": "number_of_motorist_injured",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -176,7 +187,8 @@
 								},
 								"sink": {
 									"name": "number_of_motorist_killed",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -187,7 +199,8 @@
 								},
 								"sink": {
 									"name": "contributing_factor_vehicle_1",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -198,7 +211,8 @@
 								},
 								"sink": {
 									"name": "contributing_factor_vehicle_2",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -209,7 +223,8 @@
 								},
 								"sink": {
 									"name": "vehicle_type_code1",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -220,7 +235,8 @@
 								},
 								"sink": {
 									"name": "vehicle_type_code2",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -231,7 +247,8 @@
 								},
 								"sink": {
 									"name": "borough",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -242,7 +259,8 @@
 								},
 								"sink": {
 									"name": "zip_code",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -253,7 +271,8 @@
 								},
 								"sink": {
 									"name": "latitude",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -264,7 +283,8 @@
 								},
 								"sink": {
 									"name": "longitude",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -275,7 +295,8 @@
 								},
 								"sink": {
 									"name": "cross_street_name",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -286,7 +307,8 @@
 								},
 								"sink": {
 									"name": "off_street_name",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -297,7 +319,8 @@
 								},
 								"sink": {
 									"name": "contributing_factor_vehicle_3",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -308,7 +331,8 @@
 								},
 								"sink": {
 									"name": "contributing_factor_vehicle_4",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -319,7 +343,8 @@
 								},
 								"sink": {
 									"name": "vehicle_type_code_3",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -330,7 +355,8 @@
 								},
 								"sink": {
 									"name": "vehicle_type_code_4",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -341,7 +367,8 @@
 								},
 								"sink": {
 									"name": "contributing_factor_vehicle_5",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
@@ -352,7 +379,8 @@
 								},
 								"sink": {
 									"name": "vehicle_type_code_5",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							}
 						],
